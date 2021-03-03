@@ -20,4 +20,4 @@ v1.1
 
 v1.2
 - Raised up the earpiece audio output even more, should give a more "spatial sound" kind of feel
-- Correct a few typos here and there
+- Corrected a few typos here and there
