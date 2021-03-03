@@ -318,12 +318,12 @@
     <ctl name="SpkrLeft WSA PA Mute" value="1" />
     <ctl name="SpkrRight WSA PA Mute" value="1" />
     <ctl name="EAR SPKR PA Gain" value="G_8_DB" />
-
+    
     <!-- Volume controls -->
     <ctl name="HPHL Volume" value="9" />
     <ctl name="HPHR Volume" value="9" />
     <ctl name="EAR PA Gain" value="POS_6_DB" />
-    <ctl name="EAR PA Boost" value="0" />
+    <ctl name="EAR PA Boost" value="2" />
     <!-- As we did with the other files, those ADC will have to be re-edited again. The changes though, will be globally applied-->
     <!-- The limit is 15, so you can easily go up as much as you like here-->
     <ctl name="RX1 Digital Volume" value="88" />
