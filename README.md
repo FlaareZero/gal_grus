@@ -8,7 +8,7 @@ You can easily check out all the optimizations I did by looking at the files, I 
 	> Improve the mics in all different kinds of scenarios (audio recording and video recording), 
 	> Enables Hi-Res audio for USB Type-C audio output...
 
-This README will be updated in the future! I leave a changelog here
+This README will be updated in the future! I leave a changelog here as well
 
 # Changelog:
 v1.0
