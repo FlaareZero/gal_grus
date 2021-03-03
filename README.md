@@ -17,3 +17,7 @@ v1.0
 v1.1
 -  Correct and fixed once and for all Dual Speaker(finally finally!), Plus removed distortion / echo from the earpiece when in idle.
 -  Earpiece audio boosting (G_8_DB).
+
+v1.2
+- Raised up the earpiece audio output even more, should give a more "spatial sound" kind of feel
+- Correct a few typos here and there
