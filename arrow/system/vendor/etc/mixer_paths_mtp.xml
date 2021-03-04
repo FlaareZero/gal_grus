@@ -26,24 +26,23 @@
 <!-- IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                          -->
 <mixer>
     <!-- These are the initial mixer settings -->
-    <!-- So, let's do some more additional changes here.-->
     <ctl name="Voice Rx Device Mute" id="0" value="0" />
-    <ctl name="Voice Rx Device Mute" id="1" value="0" />
-    <ctl name="Voice Rx Device Mute" id="2" value="20" />
+    <ctl name="Voice Rx Device Mute" id="1" value="-1" />
+    <ctl name="Voice Rx Device Mute" id="2" value="30" />
     <ctl name="Voice Tx Mute" id="0" value="0" />
-    <ctl name="Voice Tx Mute" id="1" value="0" />
-    <ctl name="Voice Tx Mute" id="2" value="500" />
+    <ctl name="Voice Tx Mute" id="1" value="-1" />
+    <ctl name="Voice Tx Mute" id="2" value="620" />
     <ctl name="Voice Rx Gain" id="0" value="0" />
-    <ctl name="Voice Rx Gain" id="1" value="0" />
+    <ctl name="Voice Rx Gain" id="1" value="-1" />
     <ctl name="Voice Rx Gain" id="2" value="30" />
     <ctl name="Voip Tx Mute" id="0" value="0" />
-    <ctl name="Voip Tx Mute" id="1" value="500" />
+    <ctl name="Voip Tx Mute" id="1" value="620" />
     <ctl name="Voip Rx Gain" id="0" value="0" />
-    <ctl name="Voip Rx Gain" id="1" value="20" />
+    <ctl name="Voip Rx Gain" id="1" value="30" />
     <ctl name="Voip Mode Config" value="12" />
     <ctl name="Voip Rate Config" value="0" />
     <ctl name="Voip Evrc Min Max Rate Config" id="0" value="1" />
-    <ctl name="Voip Evrc Min Max Rate Config" id="1" value="2" />
+    <ctl name="Voip Evrc Min Max Rate Config" id="1" value="4" />
     <ctl name="Voip Dtx Mode" value="0" />
     <ctl name="TTY Mode" value="OFF" />
     <ctl name="INT4_MI2S_RX Port Mixer INT3_MI2S_TX" value="0" />
@@ -173,7 +172,6 @@
     <ctl name="INT5 MI2S VI MONO" value="Left" />
     <ctl name="HPHL" value="ZERO" />
     <ctl name="HPHR" value="ZERO" />
-    <!-- This defines whether or not the earpiece will act as a secondary output. You're gonna choose whether to leave it enabled or not-->
     <ctl name="EAR_S" value="RX0" />
     <!-- HFP start -->
     <ctl name="HFP_SLIM7_UL_HL Switch" value="0" />
@@ -318,26 +316,25 @@
     <ctl name="SpkrLeft WSA PA Mute" value="1" />
     <ctl name="SpkrRight WSA PA Mute" value="1" />
     <ctl name="EAR SPKR PA Gain" value="G_8_DB" />
-    
+
     <!-- Volume controls -->
-    <ctl name="HPHL Volume" value="9" />
-    <ctl name="HPHR Volume" value="9" />
+    <ctl name="HPHL Volume" value="10" />
+    <ctl name="HPHR Volume" value="10" />
     <ctl name="EAR PA Gain" value="POS_6_DB" />
-    <ctl name="EAR PA Boost" value="2" />
-    <!-- As we did with the other files, those ADC will have to be re-edited again. The changes though, will be globally applied-->
-    <!-- The limit is 15, so you can easily go up as much as you like here-->
-    <ctl name="RX1 Digital Volume" value="88" />
-    <ctl name="RX2 Digital Volume" value="88" />
-    <ctl name="RX3 Digital Volume" value="88" />
-    <ctl name="RX4 Digital Volume" value="88" />
-    <ctl name="RX5 Digital Volume" value="88" />
-    <ctl name="ADC1 Volume" value="10" />
-    <ctl name="ADC2 Volume" value="10" />
-    <ctl name="ADC3 Volume" value="10" />
-    <ctl name="DEC1 Volume" value="88" />
-    <ctl name="DEC2 Volume" value="88" />
-    <ctl name="DEC3 Volume" value="88" />
-    <ctl name="DEC4 Volume" value="88" />
+    <ctl name="EAR PA Boost" value="1" />
+
+    <ctl name="RX1 Digital Volume" value="90" />
+    <ctl name="RX2 Digital Volume" value="90" />
+    <ctl name="RX3 Digital Volume" value="90" />
+    <ctl name="RX4 Digital Volume" value="90" />
+    <ctl name="RX5 Digital Volume" value="90" />
+    <ctl name="ADC1 Volume" value="8" />
+    <ctl name="ADC2 Volume" value="8" />
+    <ctl name="ADC3 Volume" value="8" />
+    <ctl name="DEC1 Volume" value="90" />
+    <ctl name="DEC2 Volume" value="90" />
+    <ctl name="DEC3 Volume" value="90" />
+    <ctl name="DEC4 Volume" value="90" />
 
     <!-- Compander controls -->
     <ctl name="COMP1 Switch" value="1" />
@@ -399,11 +396,10 @@
     <ctl name="IIR1 Enable Band3" value="0" />
     <ctl name="IIR1 Enable Band4" value="0" />
     <ctl name="IIR1 Enable Band5" value="0" />
-    <!-- As with the IIR, it's best to not go over 55. So, 55 is gonna be our reference value-->
-    <ctl name="IIR1 INP1 Volume" value="55" />
-    <ctl name="IIR1 INP2 Volume" value="55" />
-    <ctl name="IIR1 INP3 Volume" value="55" />
-    <ctl name="IIR1 INP4 Volume" value="55" />
+    <ctl name="IIR1 INP1 Volume" value="53" />
+    <ctl name="IIR1 INP2 Volume" value="53" />
+    <ctl name="IIR1 INP3 Volume" value="53" />
+    <ctl name="IIR1 INP4 Volume" value="53" />
     <ctl name="IIR1 INP1 MUX" value="ZERO" />
     <ctl name="MultiMedia17 Mixer INT3_MI2S_TX" value="0" />
     <ctl name="MultiMedia18 Mixer INT3_MI2S_TX" value="0" />
@@ -416,9 +412,9 @@
     <ctl name="Ultrasound Event" value="0" />
     <ctl name="Ultrasound Mode" value="0" />
     <ctl name="Ultrasound Suspend" value="0" />
-    <ctl name="Ultrasound Enable" value="0" />
-    <ctl name="Ultrasound Rx Port" value="0" />
-    <ctl name="Ultrasound RampDown" value="0" />
+    <ctl name="Ultrasound Enable" value="Off" />
+    <ctl name="Ultrasound Rx Port" value="Off" />
+    <ctl name="Ultrasound RampDown" value="Off" />
     <ctl name="Ultrasound Microphone Index" value="0" />
 
     <!-- Add the new path begin -->
@@ -569,7 +565,7 @@
         <ctl name="RX1 MIX1 INP1" value="IIR1" />
         <ctl name="EAR_S" value="Switch" />
         <ctl name="Loopback MCLK" value="ENABLE" />
-        <ctl name="DEC1 Volume" value="108" />
+        <ctl name="DEC1 Volume" value="110" />
         <ctl name="Interphone Switch" value="ENABLE" />
     </path>
 
@@ -2209,8 +2205,8 @@
     </path>
 
     <path name="handset">
-        <ctl name="EAR SPKR PA Gain" value="G_3_DB" />
-        <path name="speaker-mono" />
+        <ctl name="EAR SPKR PA Gain" value="G_8_DB" />
+        <path name="speaker-mono-2" />
     </path>
 
     <path name="handset-mic">
