@@ -21,3 +21,8 @@ v1.1
 v1.2
 - Raised up the earpiece audio output even more, should give a more "spatial sound" kind of feel
 - Corrected a few typos here and there
+
+v1.3
+- Integrated a new installation logic that decides whether or not you're running ArrowOS / AEX (more supports will come in the next releases!)
+- Reworked locally all the mixers for ArrowOS (to be fully in par with AEX)
+- [1/2] Earpiece protection from high freqs
