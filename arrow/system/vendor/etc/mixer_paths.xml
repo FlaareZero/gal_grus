@@ -25,23 +25,20 @@
 <!-- OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN -->
 <!-- IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                          -->
 <mixer>
-
-    <!-- To be in par with the changes, I'm gonna change a few values from their original.-->
-    <!-- I'll add one more comment here to explain, where you see values different from 0, that's where the audio is regolated-->
     <!-- These are the initial mixer settings -->
     <ctl name="Voice Rx Device Mute" id="0" value="0" />
-    <ctl name="Voice Rx Device Mute" id="1" value="0" />
-    <ctl name="Voice Rx Device Mute" id="2" value="30" />
+    <ctl name="Voice Rx Device Mute" id="1" value="-1" />
+    <ctl name="Voice Rx Device Mute" id="2" value="40" />
     <ctl name="Voice Tx Mute" id="0" value="0" />
-    <ctl name="Voice Tx Mute" id="1" value="0" />
+    <ctl name="Voice Tx Mute" id="1" value="-1" />
     <ctl name="Voice Tx Mute" id="2" value="620" />
     <ctl name="Voice Rx Gain" id="0" value="0" />
-    <ctl name="Voice Rx Gain" id="1" value="0" />
-    <ctl name="Voice Rx Gain" id="2" value="30" />
+    <ctl name="Voice Rx Gain" id="1" value="-1" />
+    <ctl name="Voice Rx Gain" id="2" value="40" />
     <ctl name="Voip Tx Mute" id="0" value="0" />
     <ctl name="Voip Tx Mute" id="1" value="620" />
     <ctl name="Voip Rx Gain" id="0" value="0" />
-    <ctl name="Voip Rx Gain" id="1" value="30" />
+    <ctl name="Voip Rx Gain" id="1" value="40" />
     <ctl name="Voip Mode Config" value="12" />
     <ctl name="Voip Rate Config" value="0" />
     <ctl name="Voip Evrc Min Max Rate Config" id="0" value="1" />
@@ -305,10 +302,9 @@
     <ctl name="SpkrRight WSA PA Gain" value="G_0_DB" />
     <ctl name="SpkrLeft WSA PA Mute" value="1" />
     <ctl name="SpkrRight WSA PA Mute" value="1" />
-    <ctl name="EAR SPKR PA Gain" value="G_8_DB" />
+    <ctl name="EAR SPKR PA Gain" value="G_4_DB" />
 
     <!-- Volume controls -->
-    <!-- You can specify and change the values as you wish. Remember that RX* higher than 95 db can cause distortion or DSP overload.-->
     <ctl name="HPHL Volume" value="9" />
     <ctl name="HPHR Volume" value="9" />
     <ctl name="EAR PA Gain" value="POS_1P5_DB" />
@@ -319,14 +315,13 @@
     <ctl name="RX3 Digital Volume" value="90" />
     <ctl name="RX4 Digital Volume" value="90" />
     <ctl name="RX5 Digital Volume" value="90" />
-    <!-- Also, ADC specifies the mic volumes. Higher than 97 db-->
     <ctl name="ADC1 Volume" value="8" />
     <ctl name="ADC2 Volume" value="8" />
     <ctl name="ADC3 Volume" value="8" />
     <ctl name="DEC1 Volume" value="90" />
     <ctl name="DEC2 Volume" value="90" />
-    <ctl name="DEC3 Volume" value="88" />
-    <ctl name="DEC4 Volume" value="88" />
+    <ctl name="DEC3 Volume" value="90" />
+    <ctl name="DEC4 Volume" value="90" />
 
     <!-- Compander controls -->
     <ctl name="COMP1 Switch" value="1" />
@@ -388,11 +383,10 @@
     <ctl name="IIR1 Enable Band3" value="0" />
     <ctl name="IIR1 Enable Band4" value="0" />
     <ctl name="IIR1 Enable Band5" value="0" />
-    <!-- Another little change. IIR1 INP1 defines the volume in-call. Higher than 60 causes echo/general distorsion-->
-    <ctl name="IIR1 INP1 Volume" value="55" />
-    <ctl name="IIR1 INP2 Volume" value="55" />
-    <ctl name="IIR1 INP3 Volume" value="55" />
-    <ctl name="IIR1 INP4 Volume" value="55" />
+    <ctl name="IIR1 INP1 Volume" value="60" />
+    <ctl name="IIR1 INP2 Volume" value="60" />
+    <ctl name="IIR1 INP3 Volume" value="60" />
+    <ctl name="IIR1 INP4 Volume" value="60" />
     <ctl name="IIR1 INP1 MUX" value="ZERO" />
 
     <!-- anc related -->
@@ -1588,21 +1582,20 @@
     </path>
 
     <!-- These are actual sound device specific mixer settings -->
-    <!-- Since we firstly raise the volumes, let's do the same here. ADC1,2,3 will go to 9 for instance, not 10, that generates reverb-->
     <path name="adc1">
-        <ctl name="ADC1 Volume" value="9" />
+        <ctl name="ADC1 Volume" value="10" />
         <ctl name="DEC1 MUX" value="ADC1" />
         <ctl name="ADC1_INP1 Switch" value="1" />
     </path>
 
     <path name="adc2">
-        <ctl name="ADC2 Volume" value="9" />
+        <ctl name="ADC2 Volume" value="10" />
         <ctl name="DEC1 MUX" value="ADC2" />
         <ctl name="ADC2 MUX" value="INP2" />
     </path>
 
     <path name="adc3">
-        <ctl name="ADC3 Volume" value="9" />
+        <ctl name="ADC3 Volume" value="10" />
         <ctl name="DEC1 MUX" value="ADC2" />
         <ctl name="ADC2 MUX" value="INP3" />
     </path>
@@ -1762,8 +1755,9 @@
     </path>
 
     <path name="handset">
-        <ctl name="EAR SPKR PA Gain" value="G_3_DB" />
-        <path name="speaker-mono" />
+        <ctl name="EAR SPKR PA Gain" value="G_4_DB" />
+        <ctl name="EAR_S" value="RX0" />
+        <path name="speaker-mono-2" />
     </path>
 
     <path name="handset-mic">
@@ -2285,4 +2279,6 @@
     <path name="hifi-record usb-headset-mic">
         <ctl name="MultiMedia2 Mixer USB_AUDIO_TX" value="1" />
     </path>
+
 </mixer>
+
