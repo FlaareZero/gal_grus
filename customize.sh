@@ -7,10 +7,10 @@ ui_print "     Made by matt_zer01      "
 ui_print " Setting up the environment..."
 
 #variables:
-mixer1 = /vendor/etc/mixer_paths.xml
-mixer2 = /vendor/etc/mixer_paths_mtp.xml
-mixer3 = /vendor/etc/mixer_paths_i2s.xml 
-mixer4 = /vendor/etc/mixer_paths_skuw.xml
+mixer1 = "/vendor/etc/mixer_paths.xml"
+mixer2 = "/vendor/etc/mixer_paths_mtp.xml"
+mixer3 = "/vendor/etc/mixer_paths_i2s.xml" 
+mixer4 = "/vendor/etc/mixer_paths_skuw.xml"
 
 #Adding a custom rom check
 #ROM Checking
@@ -32,8 +32,7 @@ then
   ui_print "Okay! You're running AEX! Continuing installation..."
   $MODPATH = $MODPATH/aex 
   ui_print "Backing up old Mixer files..."
-  mkdir /sdcard/old_mixer
-  mv -f mixer1 mixer2 mixer3 /sdcard/old_mixer
+  mkdir /sdcard/old_mixer && mv -f mixer1 mixer2 mixer3 /sdcard/old_mixer
   ui_print "Copying Mixer files into /vendor/etc..."
   cp -af $MODPATH /vendor/etc
   ui_print "Setting permissions..."
