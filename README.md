@@ -31,3 +31,4 @@ v1.4
 - Fixes for the installation logic
 - [2/2] Earpiece protection from high freqs
 - Ramped up all the volumes, cleared low freqs from i2s and skuw for both speaker and quadmic
+
