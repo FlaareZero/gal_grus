@@ -300,7 +300,7 @@
     <ctl name="SpkrLeft SWR DAC_Port Switch" value="0" />
     <ctl name="SpkrRight SWR DAC_Port Switch" value="0" />
     <ctl name="SpkrLeft WSA PA Gain" value="G_2_DB" />
-    <ctl name="EAR SPKR PA Gain" value="G_DEFAULT" />
+    <ctl name="EAR SPKR PA Gain" value="G_6_DB" />
 
     <!-- EAR controls -->
     <ctl name="EAR_S" value="RX4" />
@@ -2001,7 +2001,7 @@
     <ctl name="EAR PA Boost" value="DISABLE" />
 	<ctl name="RX1 MIX1 INP1" value="RX1" />
 	<ctl name="RDAC2 MUX" value="RX1" />
-	<ctl name="EAR_S" value="RX0" />
+	<ctl name="EAR_S" value="RX4" />
     <path name="speaker-mono" />
     </path>
 
