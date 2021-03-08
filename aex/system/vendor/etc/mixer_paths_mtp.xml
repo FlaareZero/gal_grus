@@ -29,18 +29,18 @@
     <!-- So, let's do some more additional changes here.-->
     <ctl name="Voice Rx Device Mute" id="0" value="0" />
     <ctl name="Voice Rx Device Mute" id="1" value="0" />
-    <ctl name="Voice Rx Device Mute" id="2" value="20" />
+    <ctl name="Voice Rx Device Mute" id="2" value="30" />
     <ctl name="Voice Tx Mute" id="0" value="0" />
     <ctl name="Voice Tx Mute" id="1" value="0" />
-    <ctl name="Voice Tx Mute" id="2" value="500" />
+    <ctl name="Voice Tx Mute" id="2" value="620" />
     <ctl name="Voice Rx Gain" id="0" value="0" />
     <ctl name="Voice Rx Gain" id="1" value="0" />
     <ctl name="Voice Rx Gain" id="2" value="30" />
     <ctl name="Voip Tx Mute" id="0" value="0" />
-    <ctl name="Voip Tx Mute" id="1" value="500" />
+    <ctl name="Voip Tx Mute" id="1" value="620" />
     <ctl name="Voip Rx Gain" id="0" value="0" />
-    <ctl name="Voip Rx Gain" id="1" value="20" />
-    <ctl name="Voip Mode Config" value="12" />
+    <ctl name="Voip Rx Gain" id="1" value="30" />
+    <ctl name="Voip Mode Config" value="15" />
     <ctl name="Voip Rate Config" value="0" />
     <ctl name="Voip Evrc Min Max Rate Config" id="0" value="1" />
     <ctl name="Voip Evrc Min Max Rate Config" id="1" value="2" />
@@ -174,7 +174,7 @@
     <ctl name="HPHL" value="ZERO" />
     <ctl name="HPHR" value="ZERO" />
     <!-- This defines whether or not the earpiece will act as a secondary output. You're gonna choose whether to leave it enabled or not-->
-    <ctl name="EAR_S" value="RX0" />
+    <ctl name="EAR_S" value="RX4" />
     <!-- HFP start -->
     <ctl name="HFP_SLIM7_UL_HL Switch" value="0" />
     <ctl name="INT4_MI2S_RX Port Mixer SLIM_7_TX" value="0" />
@@ -318,22 +318,22 @@
     <ctl name="SpkrLeft WSA PA Mute" value="1" />
     <ctl name="SpkrRight WSA PA Mute" value="1" />
     <ctl name="EAR SPKR PA Gain" value="G_8_DB" />
-    
+
     <!-- Volume controls -->
     <ctl name="HPHL Volume" value="9" />
     <ctl name="HPHR Volume" value="9" />
     <ctl name="EAR PA Gain" value="POS_6_DB" />
-    <ctl name="EAR PA Boost" value="2" />
+    <ctl name="EAR PA Boost" value="0" />
     <!-- As we did with the other files, those ADC will have to be re-edited again. The changes though, will be globally applied-->
-    <!-- The limit is 15, so you can easily go up as much as you like here-->
+    <!-- The limit is 95, so you can easily go up as much as you like here-->
     <ctl name="RX1 Digital Volume" value="88" />
     <ctl name="RX2 Digital Volume" value="88" />
     <ctl name="RX3 Digital Volume" value="88" />
     <ctl name="RX4 Digital Volume" value="88" />
     <ctl name="RX5 Digital Volume" value="88" />
-    <ctl name="ADC1 Volume" value="10" />
-    <ctl name="ADC2 Volume" value="10" />
-    <ctl name="ADC3 Volume" value="10" />
+    <ctl name="ADC1 Volume" value="15" />
+    <ctl name="ADC2 Volume" value="15" />
+    <ctl name="ADC3 Volume" value="15" />
     <ctl name="DEC1 Volume" value="88" />
     <ctl name="DEC2 Volume" value="88" />
     <ctl name="DEC3 Volume" value="88" />
@@ -2054,19 +2054,19 @@
 
     <!-- These are actual sound device specific mixer settings -->
     <path name="adc1">
-        <ctl name="ADC1 Volume" value="6" />
+        <ctl name="ADC1 Volume" value="10" />
         <ctl name="DEC1 MUX" value="ADC1" />
         <ctl name="ADC1_INP1 Switch" value="1" />
     </path>
 
     <path name="adc2">
-        <ctl name="ADC2 Volume" value="6" />
+        <ctl name="ADC2 Volume" value="10" />
         <ctl name="DEC1 MUX" value="ADC2" />
         <ctl name="ADC2 MUX" value="INP2" />
     </path>
 
     <path name="adc3">
-        <ctl name="ADC3 Volume" value="6" />
+        <ctl name="ADC3 Volume" value="10" />
         <ctl name="DEC1 MUX" value="ADC2" />
         <ctl name="ADC2 MUX" value="INP3" />
     </path>
@@ -2180,6 +2180,7 @@
         <ctl name="AIF1_VI_SDW Mixer SPKR_VI_1" value="1" />
         <ctl name="AIF1_VI_SDW Mixer SPKR_VI_2" value="1" />
         <path name="speaker" />
+        <path name="headset" />
         <ctl name="VI_FEED_TX Channels" value="Two" />
         <ctl name="INT4_MI2S_RX_VI_FB_STEREO_CH_MUX" value="INT5_MI2S_TX" />
     </path>
@@ -2209,8 +2210,9 @@
     </path>
 
     <path name="handset">
-        <ctl name="EAR SPKR PA Gain" value="G_3_DB" />
-        <path name="speaker-mono" />
+        <ctl name="EAR SPKR PA Gain" value="G_4_DB" />
+        <ctl name="EAR_S" value="RX4" />
+        <path name="speaker" />
     </path>
 
     <path name="handset-mic">

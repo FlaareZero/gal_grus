@@ -27,7 +27,6 @@
 <mixer>
 
     <!-- To be in par with the changes, I'm gonna change a few values from their original.-->
-    <!-- I'll add one more comment here to explain, where you see values different from 0, that's where the audio is regolated-->
     <!-- These are the initial mixer settings -->
     <ctl name="Voice Rx Device Mute" id="0" value="0" />
     <ctl name="Voice Rx Device Mute" id="1" value="0" />
@@ -42,7 +41,7 @@
     <ctl name="Voip Tx Mute" id="1" value="620" />
     <ctl name="Voip Rx Gain" id="0" value="0" />
     <ctl name="Voip Rx Gain" id="1" value="30" />
-    <ctl name="Voip Mode Config" value="12" />
+    <ctl name="Voip Mode Config" value="15" />
     <ctl name="Voip Rate Config" value="0" />
     <ctl name="Voip Evrc Min Max Rate Config" id="0" value="1" />
     <ctl name="Voip Evrc Min Max Rate Config" id="1" value="8" />
@@ -305,7 +304,7 @@
     <ctl name="SpkrRight WSA PA Gain" value="G_0_DB" />
     <ctl name="SpkrLeft WSA PA Mute" value="1" />
     <ctl name="SpkrRight WSA PA Mute" value="1" />
-    <ctl name="EAR SPKR PA Gain" value="G_8_DB" />
+    <ctl name="EAR SPKR PA Gain" value="G_DEFAULT" />
 
     <!-- Volume controls -->
     <!-- You can specify and change the values as you wish. Remember that RX* higher than 95 db can cause distortion or DSP overload.-->
@@ -2285,4 +2284,5 @@
     <path name="hifi-record usb-headset-mic">
         <ctl name="MultiMedia2 Mixer USB_AUDIO_TX" value="1" />
     </path>
+
 </mixer>

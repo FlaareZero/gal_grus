@@ -2206,7 +2206,7 @@
 
     <path name="handset">
         <ctl name="EAR SPKR PA Gain" value="G_8_DB" />
-        <path name="speaker-mono-2" />
+        <path name="speaker-mono" />
     </path>
 
     <path name="handset-mic">
