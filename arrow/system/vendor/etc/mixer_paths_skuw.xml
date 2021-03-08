@@ -28,13 +28,13 @@
 <mixer>
     <!-- These are the initial mixer settings -->
     <ctl name="Voice Rx Device Mute" id="0" value="0" />
-    <ctl name="Voice Rx Device Mute" id="1" value="-1" />
+    <ctl name="Voice Rx Device Mute" id="1" value="0" />
     <ctl name="Voice Rx Device Mute" id="2" value="40" />
     <ctl name="Voice Tx Mute" id="0" value="0" />
-    <ctl name="Voice Tx Mute" id="1" value="-1" />
+    <ctl name="Voice Tx Mute" id="1" value="0" />
     <ctl name="Voice Tx Mute" id="2" value="620" />
     <ctl name="Voice Rx Gain" id="0" value="0" />
-    <ctl name="Voice Rx Gain" id="1" value="-1" />
+    <ctl name="Voice Rx Gain" id="1" value="0" />
     <ctl name="Voice Rx Gain" id="2" value="40" />
     <ctl name="Voip Tx Mute" id="0" value="0" />
     <ctl name="Voip Tx Mute" id="1" value="620" />
@@ -299,11 +299,11 @@
     <ctl name="SpkrRight VISENSE Switch" value="0" />
     <ctl name="SpkrLeft SWR DAC_Port Switch" value="0" />
     <ctl name="SpkrRight SWR DAC_Port Switch" value="0" />
-    <ctl name="SpkrLeft WSA PA Gain" value="G_0_DB" />
+    <ctl name="SpkrLeft WSA PA Gain" value="G_2_DB" />
     <ctl name="EAR SPKR PA Gain" value="G_DEFAULT" />
 
     <!-- EAR controls -->
-    <ctl name="EAR_S" value="RX0" />
+    <ctl name="EAR_S" value="RX4" />
 
     <!-- Volume controls -->
     <ctl name="HPHL Volume" value="9" />
@@ -1997,11 +1997,12 @@
     </path>
 
     <path name="handset">
-        <ctl name="INT0_MI2S_RX Channels" value="One" />
-        <ctl name="EAR PA Boost" value="DISABLE" />
+    <ctl name="INT0_MI2S_RX Channels" value="One" />
+    <ctl name="EAR PA Boost" value="DISABLE" />
 	<ctl name="RX1 MIX1 INP1" value="RX1" />
 	<ctl name="RDAC2 MUX" value="RX1" />
-	<ctl name="EAR_S" value="Switch" />
+	<ctl name="EAR_S" value="RX0" />
+    <path name="speaker-mono" />
     </path>
 
     <path name="handset-mic">
