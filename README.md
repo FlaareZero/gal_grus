@@ -32,3 +32,5 @@ v1.4
 - [2/2] Earpiece protection from high freqs
 - Ramped up all the volumes, cleared low freqs from i2s and skuw for both speaker and quadmic
 
+# How to install:
+Either pick the latest release (by clicking to the releases tab) or clone the repo somewhere on your pc, zip everything up and flash it on your grus! Easy as that :D
