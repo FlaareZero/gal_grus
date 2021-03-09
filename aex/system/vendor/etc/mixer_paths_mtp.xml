@@ -331,9 +331,9 @@
     <ctl name="RX3 Digital Volume" value="88" />
     <ctl name="RX4 Digital Volume" value="88" />
     <ctl name="RX5 Digital Volume" value="88" />
-    <ctl name="ADC1 Volume" value="15" />
-    <ctl name="ADC2 Volume" value="15" />
-    <ctl name="ADC3 Volume" value="15" />
+    <ctl name="ADC1 Volume" value="45" />
+    <ctl name="ADC2 Volume" value="45" />
+    <ctl name="ADC3 Volume" value="45" />
     <ctl name="DEC1 Volume" value="88" />
     <ctl name="DEC2 Volume" value="88" />
     <ctl name="DEC3 Volume" value="88" />
@@ -2054,19 +2054,19 @@
 
     <!-- These are actual sound device specific mixer settings -->
     <path name="adc1">
-        <ctl name="ADC1 Volume" value="10" />
+        <ctl name="ADC1 Volume" value="30" />
         <ctl name="DEC1 MUX" value="ADC1" />
         <ctl name="ADC1_INP1 Switch" value="1" />
     </path>
 
     <path name="adc2">
-        <ctl name="ADC2 Volume" value="10" />
+        <ctl name="ADC2 Volume" value="30" />
         <ctl name="DEC1 MUX" value="ADC2" />
         <ctl name="ADC2 MUX" value="INP2" />
     </path>
 
     <path name="adc3">
-        <ctl name="ADC3 Volume" value="10" />
+        <ctl name="ADC3 Volume" value="30" />
         <ctl name="DEC1 MUX" value="ADC2" />
         <ctl name="ADC2 MUX" value="INP3" />
     </path>
@@ -2225,8 +2225,8 @@
         <ctl name="ADC1_INP1 Switch" value="1" />
         <ctl name="DEC2 MUX" value="ADC2" />
         <ctl name="ADC2 MUX" value="INP3" />
-        <ctl name="ADC1 Volume" value="6" />
-        <ctl name="ADC3 Volume" value="6" />
+        <ctl name="ADC1 Volume" value="9" />
+        <ctl name="ADC3 Volume" value="9" />
     </path>
 
     <path name="asr-mic">
@@ -2235,8 +2235,8 @@
         <ctl name="ADC1_INP1 Switch" value="1" />
         <ctl name="DEC2 MUX" value="ADC2" />
         <ctl name="ADC2 MUX" value="INP3" />
-        <ctl name="ADC1 Volume" value="6" />
-        <ctl name="ADC3 Volume" value="6" />
+        <ctl name="ADC1 Volume" value="9" />
+        <ctl name="ADC3 Volume" value="9" />
     </path>
 
     <path name="handset-mic-db">
