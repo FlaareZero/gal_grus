@@ -1963,6 +1963,8 @@
     <path name="voice-speaker-protected">
         <ctl name="AIF1_VI_SDW Mixer SPKR_VI_1" value="1" />
         <path name="speaker-mono" />
+        <!-- adding here the handset will make sure to protect it from low-freqs and such -->
+        <path name="handset" />
         <ctl name="VI_FEED_TX Channels" value="One" />
         <ctl name="INT4_MI2S_RX_VI_FB_MONO_CH_MUX" value="INT5_MI2S_TX" />
     </path>
@@ -2218,8 +2220,8 @@
 
     <!-- Dual MIC devices -->
     <path name="handset-dmic-endfire">
-        <ctl name="ADC1 Volume" value="8" />
-        <ctl name="ADC3 Volume" value="8" />
+        <ctl name="ADC1 Volume" value="25" />
+        <ctl name="ADC3 Volume" value="25" />
         <ctl name="DEC1 MUX" value="ADC1" />
         <ctl name="ADC1_INP1 Switch" value="1" />
         <ctl name="DEC2 MUX" value="ADC2" />
@@ -2228,8 +2230,8 @@
     </path>
 
     <path name="speaker-dmic-endfire">
-        <ctl name="ADC1 Volume" value="8" />
-        <ctl name="ADC3 Volume" value="8" />
+        <ctl name="ADC1 Volume" value="30" />
+        <ctl name="ADC3 Volume" value="30" />
         <ctl name="DEC1 MUX" value="ADC1" />
         <ctl name="ADC1_INP1 Switch" value="1" />
         <ctl name="DEC2 MUX" value="ADC2" />
