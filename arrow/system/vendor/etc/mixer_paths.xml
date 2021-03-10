@@ -1757,9 +1757,7 @@
     <path name="handset">
         <ctl name="EAR SPKR PA Gain" value="G_6_DB" />
         <ctl name="EAR_S" value="RX0" />
-        <ctl name="EAR_S" value="RX1" />
-        <ctl name="EAR_S" value="RX2" />
-        <ctl name="EAR_S" value="RX3" />
+        <ctl name="EAR_S" value="RX4" />
         <path name="speaker-mono" />
     </path>
 
