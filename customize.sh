@@ -1,7 +1,7 @@
 #!/system/bin/sh
 #Credits for parts of the logic goes to ElPaablo (github.com/elpaablo) for the if's and under-the-hood stuff!
 # and to sirio for the idea of using cp instead of mv! Thank you guys! <3
-
+ui_print ""
 ui_print " GAL a.k.a. GrusAudioLovers  "
 ui_print " --------------------------  "
 ui_print "     Made by matt_zer01      "
@@ -35,13 +35,8 @@ else
     if [ "$prop" != "" ]; then
       rom="superior"
     else
-      prop=$(getprop org.kowalski.version)
-      if [ "$prop" != ""]; then
-        rom="kowalskios"
-      else
-        ui_print "ROM not supported. Aborting installation..."
-        abort
-      fi
+      ui_print "ROM not supported. Aborting installation..."
+      abort
     fi
   fi
 fi
@@ -64,7 +59,7 @@ ui_print "Starting installation..."
 ui_print "Backing up old Mixer files..."
 mkdir $bakpath
 cp -af $mixer1 $mixer2 $mixer3 $bakpath
-if [ $rom == "arrow" || $rom == "kowalskios" ]; then
+if [ $rom == "arrow" ]; then
   cp -af $mixer4 $bakpath
 fi
 ui_print "Copying Mixer files into /vendor/etc..."
