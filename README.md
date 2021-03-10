@@ -1,6 +1,6 @@
 # G.A.L. aka Grus Audio Lovers! (worst name ever)
 
-A complete audio-based optimizations for your AOSP Android 11-based custom rom (YMMV)(The known supported ones are: ArrowOS, AEX, wtSupOS!).
+A complete audio-based optimizations for your AOSP Android 11-based custom rom (YMMV)(The known supported ones are: ArrowOS, AEX, wtSupOS! and KowalskiOS).
 You can easily check out all the optimizations I did by looking at the files, I left all the comments with all the know-how and what that thing - row does!
 
 - In a general way, what this magisk module does is simply improve the audio situation of the Mi9SE, since, well, by default it doesn't perform just as great as you would expect it to be. To be more precise, what this module does is:
