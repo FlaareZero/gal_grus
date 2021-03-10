@@ -11,34 +11,14 @@ ui_print " Setting up the environment..."
 #variables:
 mixer1=/vendor/etc/mixer_paths.xml
 mixer2=/vendor/etc/mixer_paths_mtp.xml
-mixer3=/vendor/etc/mixer_paths_i2s.xml 
-mixer4=/vendor/etc/mixer_paths_skuw.xml
+mixer3=/vendor/etc/mixer_paths_skuw.xml
 
-#checks if device is Grus
+#checks if device is Grus and if you're running KOSP
 device=$(getprop ro.product.system.device)
-if [ $device != "grus" ]; then
+kowalskios=$(getprop ro.build.version.incremental)
+if [ $device != "grus" && kowalskios != "eng_pengus" ]; then
   ui_print "Device not supported. Aborting installaton..."
   abort
-fi
-
-#checks if you're running AEX, ArrowOS or SuperiorOS
-rom=""
-prop=$(getprop ro.extended.version)
-if [ "$prop" != "" ]; then
-  rom="aex"
-else
-  prop=$(getprop ro.arrow.version)
-  if [ "$prop" != "" ]; then
-    rom="arrow"
-  else
-    prop=$(getprop ro.superior.version)
-    if [ "$prop" != "" ]; then
-      rom="superior"
-    else
-      ui_print "ROM not supported. Aborting installation..."
-      abort
-    fi
-  fi
 fi
 
 if [ "$API" != "30" ]; then
@@ -51,7 +31,7 @@ else
   ui_print " "
   ui_print "..."
 fi
-
+rom=kow
 $MODPATH=$MODPATH/$rom
 bakpath=/sdcard/old_mixer
 
@@ -59,9 +39,6 @@ ui_print "Starting installation..."
 ui_print "Backing up old Mixer files..."
 mkdir $bakpath
 cp -af $mixer1 $mixer2 $mixer3 $bakpath
-if [ $rom == "arrow" ]; then
-  cp -af $mixer4 $bakpath
-fi
 ui_print "Copying Mixer files into /vendor/etc..."
 cp -af $MODPATH /vendor/etc
 ui_print "Setting permissions..."
@@ -69,4 +46,3 @@ ui_print "Setting permissions..."
 ui_print "..."
 ui_print "Done!"
 exit 0
-

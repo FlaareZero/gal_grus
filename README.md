@@ -1,6 +1,6 @@
 # G.A.L. aka Grus Audio Lovers! (worst name ever)
 
-A complete audio-based optimizations for your AOSP Android 11-based custom rom (YMMV)(The known supported ones are: ArrowOS, AEX, wtSupOS! and KowalskiOS).
+A complete audio-based optimizations for your AOSP Android 11-based custom rom (YMMV)(The known supported ones are: ArrowOS, AEX, wtSupOS!).
 You can easily check out all the optimizations I did by looking at the files, I left all the comments with all the know-how and what that thing - row does!
 
 - In a general way, what this magisk module does is simply improve the audio situation of the Mi9SE, since, well, by default it doesn't perform just as great as you would expect it to be. To be more precise, what this module does is:
@@ -26,21 +26,3 @@ v1.3
 - Integrated a new installation logic that decides whether or not you're running ArrowOS / AEX (more supports will come in the next releases!)
 - Reworked locally all the mixers for ArrowOS (to be fully in par with AEX)
 - [1/2] Earpiece protection from high freqs
-
-v1.4
-- Fixes for the installation logic
-- [2/2] Earpiece protection from high freqs
-- Ramped up all the volumes, cleared low freqs from i2s and skuw for both speaker and quadmic
-
-v1.4.1
-- Quick patch update
-- Backup logic fixes and refinements (thanks to @elpaablo and to Sirio for the help! <3)
-- [1/3] Adding support for all the earpieces (don't ask me why Grus is so strange xD)
-
-v1.4.2
-- [2/3] Adding more earpieces support
-- [3/3] Adding more earpieces support 
-- KOSP Bringup and initial support (synced with ArrowOS)
-
-# How to install:
-Either pick the latest release (by clicking to the releases tab) or clone the repo somewhere on your pc, zip everything up and flash it on your grus! Easy as that :D
