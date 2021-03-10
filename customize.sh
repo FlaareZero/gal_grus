@@ -35,7 +35,7 @@ else
     if [ "$prop" != "" ]; then
       rom="superior"
     else
-      prop=$(getprop ro.aosp.version)
+      prop=$(getprop org.kowalski.version)
       if [ "$prop" != ""]; then
         rom="kowalskios"
       else

@@ -37,5 +37,10 @@ v1.4.1
 - Backup logic fixes and refinements (thanks to @elpaablo and to Sirio for the help! <3)
 - [1/3] Adding support for all the earpieces (don't ask me why Grus is so strange xD)
 
+v1.4.2
+- [2/3] Adding more earpieces support
+- [3/3] Adding more earpieces support 
+- KOSP Bringup and initial support (synced with ArrowOS)
+
 # How to install:
 Either pick the latest release (by clicking to the releases tab) or clone the repo somewhere on your pc, zip everything up and flash it on your grus! Easy as that :D
