@@ -303,6 +303,7 @@
     <ctl name="EAR SPKR PA Gain" value="G_6_DB" />
 
     <!-- EAR controls -->
+    <ctl name="EAR_S" value="RX0" />
     <ctl name="EAR_S" value="RX4" />
 
     <!-- Volume controls -->
