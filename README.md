@@ -1,6 +1,6 @@
 # G.A.L. aka Grus Audio Lovers! (worst name ever)
 
-A complete audio-based optimizations for your AOSP Android 11-based custom rom (YMMV)(The known supported ones are: ArrowOS, AEX, wtSupOS!).
+A complete audio-based optimizations for your KOSP!
 You can easily check out all the optimizations I did by looking at the files, I left all the comments with all the know-how and what that thing - row does!
 
 - In a general way, what this magisk module does is simply improve the audio situation of the Mi9SE, since, well, by default it doesn't perform just as great as you would expect it to be. To be more precise, what this module does is:
@@ -11,18 +11,6 @@ You can easily check out all the optimizations I did by looking at the files, I 
 This README will be updated in the future! I leave a changelog here as well
 
 # Changelog:
-v1.0
-- Initial release
-
-v1.1
--  Correct and fixed once and for all Dual Speaker(finally finally!), Plus removed distortion / echo from the earpiece when in idle.
--  Earpiece audio boosting (G_8_DB).
-
-v1.2
-- Raised up the earpiece audio output even more, should give a more "spatial sound" kind of feel
-- Corrected a few typos here and there
-
-v1.3
-- Integrated a new installation logic that decides whether or not you're running ArrowOS / AEX (more supports will come in the next releases!)
-- Reworked locally all the mixers for ArrowOS (to be fully in par with AEX)
-- [1/2] Earpiece protection from high freqs
+v1.4.2
+- Everything backported from ArrowOS (check the main branch for more)
+- EOL as the rom itself, will be updated only if there's a real reason to
