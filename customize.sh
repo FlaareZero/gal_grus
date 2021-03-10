@@ -35,8 +35,13 @@ else
     if [ "$prop" != "" ]; then
       rom="superior"
     else
-      ui_print "ROM not supported. Aborting installation..."
-      abort
+      prop=$(getprop ro.aosp.version)
+      if [ "$prop" != ""]; then
+        rom="kowalskios"
+      else
+        ui_print "ROM not supported. Aborting installation..."
+        abort
+      fi
     fi
   fi
 fi
@@ -59,7 +64,7 @@ ui_print "Starting installation..."
 ui_print "Backing up old Mixer files..."
 mkdir $bakpath
 cp -af $mixer1 $mixer2 $mixer3 $bakpath
-if [ $rom == "arrow" ]; then
+if [ $rom == "arrow" || $rom == "kowalskios" ]; then
   cp -af $mixer4 $bakpath
 fi
 ui_print "Copying Mixer files into /vendor/etc..."
